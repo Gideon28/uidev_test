@@ -4,12 +4,12 @@ UI exercise
 Overview
 --------
 
-We are interested in your approach to the following project. Each of the given exercises have a handful of valid solutions, and possibly other solutions we haven't seen, so don't worry about finding "the" solution. It should render correctly in all major browsers and devices, and be responsive from mobile to desktop.
+We are interested in your approach to the following project. Each of the given exercises have a handful of valid solutions, and possibly other solutions we haven't seen, so don't worry about finding "the" solution. We ask that it renders correctly in Chrome, and be responsive from mobile to desktop. Try not to use frameworks such as Bootstrap if possible.
 
 Try to create your HTML as pixel perfect to each jpg as possible but we understand text sizes will not be 100% accurate as working from flat artwork.
-You should try to complete the task within 2 hours, so plan accordingly and focus on the most important aspects.
+You should try to complete ALL the tasks within 2-3 hours, so plan accordingly and focus on the most important aspects.
 
-Please feel free to create and package your project as you see fit.
+Please feel free to create and bundle your project as you see fit. Please display your knowledge and expertise as best you can!
 
 Getting started
 ---------------
