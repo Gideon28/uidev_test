@@ -1,0 +1,172 @@
+body {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #353535;
+}
+header,
+footer {
+    width: 100%;
+    padding: 1rem 0;
+    background: white;
+    text-align: center;
+}
+footer {
+    font-size: .9rem;
+    padding: 2rem 0;
+}
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+footer,
+.card-header-right {
+     color: #009ddc;
+}
+
+#logo {
+    background: url('assets/mps-logo.svg') center center;
+    background-size: 100%;
+    text-indent: -9999px;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+#page-container {
+    width: 100%;
+    padding: 2rem 0;
+    background: #e4e4e4;
+}
+#page-content {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.user-card {
+    box-sizing: border-box;
+    background: white;
+    padding: .5rem 1rem;
+    margin: 1rem;
+    max-width: 550px;
+    width: 100%;
+    flex-basis: 480px;
+    flex-grow: 1;
+}
+.user-card--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e4e4e4;
+}
+.user--status,
+.user-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.user--status {
+    margin: 1.6rem 0;
+}
+.user-card time {
+    display: block;
+    text-align: right;
+}
+.card-header-left {
+    display: flex;
+    align-items: center;
+}
+.card-emoji {
+    display: inline-block;
+    margin-right: 1rem;
+}
+.card-emotion {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.user-card-avatar {
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+    background: black;
+}
+#page-content .user-card-avatar::after {
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    background: #009ddc url('assets/arrow.svg') center center no-repeat;
+    background-size: .8rem;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+.user-card-avatar img {
+    display: block;
+    transition: opacity .5s ease;
+}
+#page-content .user-card-avatar:hover img {
+    opacity: 0.8;
+}
+#page-content .user-card-avatar:hover::after {
+    opacity: 1;
+}
+
+/* Modal popup */
+.popup-overlay {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+.popup-inner {
+    box-sizing: border-box;
+    max-width: 700px;
+    max-height: 600px;
+    overflow-y: scroll;
+    width: 90%;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 2px 6px rgba(0,0,0,1);
+    border-radius: 3px;
+    background: #fff;
+}
+.popup-close {
+    width:20px;
+    height:20px;
+    display:inline-block;
+    position:absolute;
+    top:1rem;
+    right:1rem;
+    background: url('assets/close.svg') center center no-repeat;
+    cursor: pointer;
+}
+.popup-inner .user-card-avatar img {
+    width: 100%;
+    max-width: none;
+    height: 350px;
+    margin-top: -50px;
+}
+/* sorry... */
+#page-content .long-desc {
+    display: none;
+}
+.popup-inner .short-desc {
+    display: none;
+}
